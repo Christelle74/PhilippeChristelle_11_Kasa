@@ -1,0 +1,32 @@
+.carrousel{
+    border-radius: 25px;
+    width: 1240px;
+    height: 415px;
+    border-color: red;
+    background-color: aqua;
+    margin-top: 128px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.appartHeader{
+    margin-top: 573px;
+    height: 176px;
+    width: 1240px;
+    display: flex;
+    justify-content: stretch;
+}
+
+.appartTitle{
+    display: flex;
+    flex-direction: column;
+}
+.appartTitle h3{
+    font-size: 36px;
+}
+
+.appartTitle span{
+    font-size: 18px;
+}

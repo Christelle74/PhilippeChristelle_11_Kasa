@@ -1,0 +1,10 @@
+@import "./settings";
+@import "./pages/error.css";
+@import "./components/header.css";
+@import "./components/navigation.css";
+@import "./components/banner.css";
+@import "./components/apparts.css";
+@import "./components/card.css";
+@import "./pages/about.css";
+@import "./pages/appartPage.css";
+@import "./components/footer.css"

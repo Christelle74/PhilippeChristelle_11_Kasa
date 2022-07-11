@@ -1,0 +1,8 @@
+.appartGallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 25px;
+    background: #F7F7F7;
+    margin: 50px 100px;
+    width:1240px;
+}

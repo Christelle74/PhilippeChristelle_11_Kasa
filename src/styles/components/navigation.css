@@ -1,0 +1,25 @@
+.nav-active {
+    text-decoration-line: underline;
+    color: #FF6060;
+}
+
+.navigation{
+    width: 309px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    padding: 10px;
+    color:#FF6060; 
+}

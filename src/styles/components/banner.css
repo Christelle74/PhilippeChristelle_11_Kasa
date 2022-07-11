@@ -1,0 +1,23 @@
+.banner{
+    margin-top: 170px;
+    border-radius: 25px;
+    width: 1440px;
+    height: 223px; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannerImg{
+    object-fit: cover;
+    border-radius: 25px;
+    position:relative;
+}
+
+.banner p{
+    font-size: 48px;
+    position: absolute;
+    color: white;
+   display: flex;
+   justify-content: center;
+   width: 80%;
+}
