@@ -9,9 +9,9 @@ const Stars = ({rating}) => {
 
     return (
         <div>
-            {totalStars.map(( index)=>(
-                    <img className="star" src={index < activeStars ? activeStar : greyStar} />
-                ))}
+            {totalStars.map((index)=>(
+                <img className="star" key={index} src={index < activeStars ? activeStar : greyStar} />
+            ))}
         </div>
     );
 };

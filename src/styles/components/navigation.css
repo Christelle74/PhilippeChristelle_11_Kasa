@@ -25,7 +25,7 @@ li{
 }
 
 
-@media only screen and (max-width: 776px){
+@media only screen and (max-width: 375px){
     
     .navigation{
         width: 140px;
@@ -37,7 +37,6 @@ li{
     
     ul{
         justify-content: flex-end;
-        text-align: right;
     }
     
 }

@@ -14,7 +14,6 @@ const Card = ({data}) => {
         <div className='shadow'></div>
         <h3 className="title">{data.title}</h3>
       </Link>
-   
   )
 }
 export default Card

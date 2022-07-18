@@ -13,7 +13,7 @@ function  Apparts () {
       useEffect(() => {
         const allApparts = async()=> {
           const data = await findApparts();
-          console.log(data)
+          //console.log(data)
           setDatas(data)
           setIsLoading(false)
         }  
@@ -25,7 +25,6 @@ function  Apparts () {
       {isloading ? "Loading..." : datas.map((data) => (
           <Card data={data} key={data.id}/> //composant enfant avec clé unique       
           ))}  
-      {/* // appart={data} title={data.title} cover={data.cover} */}
     </div>
   )
 
