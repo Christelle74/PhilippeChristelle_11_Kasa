@@ -3,8 +3,11 @@
 @import "./components/header.css";
 @import "./components/navigation.css";
 @import "./components/banner.css";
-@import "./components/apparts.css";
+@import "./components/apparts.css"; 
 @import "./components/card.css";
-@import "./pages/about.css";
 @import "./pages/appartPage.css";
+@import "./pages/about.css";
+@import "./components/carrousel.css";
+@import "./components/tags.css";
+@import "./components/stars.css";
 @import "./components/footer.css"

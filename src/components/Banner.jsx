@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const Banner = ({texte, image}) => {
+
+const Banner = ({text, image}) => {
+
   return (
     <div className="banner">
       <img src={image} alt="" className="bannerImg" />
-      <p>{texte}</p>
+      {/* <p>{text !== '' ? <span>{text}</span> : ''}</p> 
+      //ou*/}
+      <p> {text !=='' && <span>{text}</span>}</p>
     </div>
   )
 }

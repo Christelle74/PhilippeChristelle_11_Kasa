@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react' 
 //useEffect, useState == hooks
-import Card from './Card'
-import {findApparts} from "../service/api"
+import Card from './Card';
+import {findApparts} from "../service/api";
+
 
 
 
@@ -10,25 +11,22 @@ function  Apparts () {
       const [isloading, setIsLoading] = useState(true)
 
       useEffect(() => {
+        const allApparts = async()=> {
+          const data = await findApparts();
+          console.log(data)
+          setDatas(data)
+          setIsLoading(false)
+        }  
         allApparts()
       }, [])
 
-
-     const allApparts = async()=> {
-      const data = await findApparts();
-      console.log(data)
-      
-      setDatas(data)
-      setIsLoading(false)
-     }
-      
-      return (
-     <div className="appartGallery">
-       {isloading ? "Loading..." : datas.map((data) => (
+  return (
+    <div className="appartGallery">
+      {isloading ? "Loading..." : datas.map((data) => (
           <Card data={data} key={data.id}/> //composant enfant avec clé unique       
           ))}  
       {/* // appart={data} title={data.title} cover={data.cover} */}
-     </div>
+    </div>
   )
 
 }

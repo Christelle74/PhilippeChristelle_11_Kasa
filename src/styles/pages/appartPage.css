@@ -1,32 +1,174 @@
-.carrousel{
-    border-radius: 25px;
-    width: 1240px;
-    height: 415px;
-    border-color: red;
-    background-color: aqua;
-    margin-top: 128px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.appartContainer{
+    margin-top: 40px;
+    margin-left: 100px;
+    width:1240px;
 }
-
 
 .appartHeader{
-    margin-top: 573px;
-    height: 176px;
-    width: 1240px;
+    margin-top: 30px;
+    height: auto;
     display: flex;
-    justify-content: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    
 }
 
-.appartTitle{
-    display: flex;
+.appartInfo{
     flex-direction: column;
 }
-.appartTitle h3{
+.appartTitle {
     font-size: 36px;
+    font-weight: 500;
 }
 
-.appartTitle span{
+.location{
     font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+
+.heberger{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+.heberger span{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    width: 100px;
+}
+.heberger img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.descriptionSection {
+    display:flex;
+    flex-direction: row;
+    gap:76px;
+    border-radius: 10px;
+    width: 1240px;
+    margin-top: 25px;
+}
+
+.descriptionSection>.dropdown {
+    width: 50%;
+}
+
+.descriptionSection>.dropdown>.dropdownHeader {
+    width: 100%;
+    font-size: 18px;
+}
+.descriptionSection>.dropdown>.dropdownHeader>.dropdownTitle {
+    font-size: 18px;
+}
+.descriptionSection>.dropdown>.dropdownText {
+    width: 100%;
+    font-size: 18px;
+}
+.descriptionSection>.dropdown>.dropdownText ul{
+    font-size: 18px;
+    line-height: 5px;
+    display: list-item;
+    list-style: none;
+}
+
+@media only screen and (max-width: 375px){
+    .appartContainer{
+        margin-top: 0px;
+        margin-left: 20px;
+        width:335px;
+    }
+    
+    .appartHeader{
+        margin-top: 15px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; 
+        
+    }
+    
+    .appartInfo{
+        flex-direction: column;
+    }
+    .appartTitle {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .location{
+        font-size: 14px;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+    
+    
+    .hebergerInfo{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 335px;
+        margin-top: 20px;
+    }
+    .heberger{
+        margin-bottom: 0;
+    }
+    .heberger span{
+        font-size: 12px;
+        margin-right: 10px;
+        width: 100px;
+    }
+    .heberger img{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .stars{
+        justify-content: flex-start;
+    }
+    
+    .descriptionSection {
+        flex-direction: column;
+        gap:20px;
+        border-radius: 5px;
+        width: 335px;
+        margin: 20px 0;
+    }
+    
+    .descriptionSection>.dropdown {
+        width: 100%;
+    }
+    
+    .descriptionSection>.dropdown>.dropdownHeader {
+        width: 100%;
+        font-size: 12px;
+    }
+    .descriptionSection>.dropdown>.dropdownHeader>.dropdownTitle {
+        font-size: 12px;
+    }
+    .descriptionSection>.dropdown>.dropdownText {
+        width: 100%;
+        font-size: 12px;
+    }
+    .descriptionSection>.dropdown>.dropdownText ul{
+        font-size: 12px;
+        line-height: 0px;
+    }
 }

@@ -1,23 +1,40 @@
 .banner{
-    margin-top: 170px;
-    border-radius: 25px;
-    width: 1440px;
-    height: 223px; 
-    display:flex;
+    margin: 170px 100px 0 100px;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center; 
+    width: 1240px; 
 }
+
 .bannerImg{
     object-fit: cover;
     border-radius: 25px;
     position:relative;
+    width: 100%;
 }
 
 .banner p{
     font-size: 48px;
+    font-weight: 500;
     position: absolute;
     color: white;
-   display: flex;
-   justify-content: center;
-   width: 80%;
 }
+
+@media only screen and (max-width: 375px){
+    .banner{
+        margin: 83px 20px 0 20px;
+        width: 335px;
+    }
+    .bannerImg{
+        border-radius: 10px;
+        height: 111px;
+        width: 335px;
+    }
+    .banner p{
+        font-size: 24px;
+        white-space: wrap;
+        width: 250px;
+    }
+    
+}
+

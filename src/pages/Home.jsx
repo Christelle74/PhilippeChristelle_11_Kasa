@@ -6,7 +6,7 @@ import Image from "../assets/img/IMG.png"
 const Home = () => {
   return (
      <div>
-      <Banner image={Image} texte="Chez vous, partout et ailleurs"/>
+      <Banner image={Image} text="Chez vous, partout et ailleurs"/>
       <Apparts/>
     </div>
 

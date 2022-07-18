@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import img from "../assets/img/Vector.svg"
 
 const Dropdown =({title, text}) => {
 
@@ -8,7 +9,7 @@ const [isOpened,setIsOpened] = useState(false);
         <div className='dropdown'>
             <div className='dropdownHeader' onClick={()=>{ setIsOpened(!isOpened);}}>
                 <div className='dropdownTitle'>{title}</div>
-                <img src="/Vector.svg" alt="" className={`arrow ${isOpened}`}/>
+                <img src={img} alt="" className={`arrow ${isOpened}`}/>
             </div>
 
             {

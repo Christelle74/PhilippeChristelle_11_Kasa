@@ -4,7 +4,7 @@
 }
 
 .navigation{
-    width: 309px;
+    width: 25%;
 }
 
 a{
@@ -23,3 +23,22 @@ li{
     padding: 10px;
     color:#FF6060; 
 }
+
+
+@media only screen and (max-width: 776px){
+    
+    .navigation{
+        width: 140px;
+    }
+    
+    a{
+        font-size: 12px;
+    }
+    
+    ul{
+        justify-content: flex-end;
+        text-align: right;
+    }
+    
+}
+ 

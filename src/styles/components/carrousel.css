@@ -1,0 +1,68 @@
+.carrousel{
+    margin-top: 128px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mainImg{
+    border-radius: 25px;
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+}
+    
+
+.arrowLeft{
+    position: absolute;
+    left: 20px;
+    width: 79px;
+    height: 180px;
+    color: white;
+    cursor: pointer;
+} 
+.arrowRight{
+    position: absolute;
+    right: 20px;
+    width: 79px;
+    height: 180px;
+    color: white;
+    cursor: pointer;
+}
+.counter{
+    position: absolute;
+    bottom: 6%;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 375px){
+    .carrousel{
+        margin-top: 94px;
+    }
+    
+    .mainImg{
+        border-radius: 10px;
+        height: 255px;
+    }
+     
+    .arrowLeft{
+        position: absolute;
+        left: 6px;
+        width: 45px;
+        height: 90px;
+    } 
+    .arrowRight{
+        position: absolute;
+        right: 6px;
+        width: 45px;
+        height: 90px;
+    }
+    .counter{
+        position: absolute;
+        bottom: 5%;
+        font-size: 12px;
+    }
+} 
