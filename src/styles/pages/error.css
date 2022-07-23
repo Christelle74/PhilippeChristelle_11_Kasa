@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1440px;
-    height: 1024px;
+     width: 100vw;
 }
 
 h1{
@@ -15,7 +14,6 @@ h1{
 .error p{
     font-size: 36px;
     font-weight: 500;
-    margin: 30px 0 0 0;
 }
 
  .error a{
@@ -23,34 +21,62 @@ h1{
     font-size: 18px;
     text-decoration-line: underline;
     color: #FF6060;
-  margin-top: 150px;
+  margin-top: 10rem;
 }
 
-@media only screen and (max-width: 375px){
-    .error{
-        width: 375px;
-        height: 812px;
-        text-align: center;
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+        
+    h1{
+        font-size: 104px;
+        margin-top: 10rem;
     }
+    
+    .error p{
+        font-size: 22px;
+    }
+    
+     .error a{
+        font-size: 16px;
+    }
+} 
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    
     
     h1{
         font-size: 96px;
-        font-weight: 700;
         width: 198px;
-        margin-top: 262px;
+        margin-top: 100px;
     }
     
     .error p{
         font-size: 18px;
-        font-weight: 500;
-        margin: 30px 0 0 0;
         width: 260px;
     }
     
      .error a{
-        font-weight: 500;
         font-size: 14px;
-      margin-bottom: 235px;
+    }
+} 
+
+
+@media only screen and (max-width: 375px){
+    
+    
+    h1{
+        font-size: 96px;
+        width: 198px;
+        margin-top: 100px;
+    }
+    
+    .error p{
+        font-size: 18px;
+        width: 260px;
+    }
+    
+     .error a{
+        font-size: 14px;
     }
     
 }

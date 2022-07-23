@@ -1,15 +1,15 @@
 .carrousel{
-    margin-top: 128px;
     display:flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 90vw;
 }
 
 .mainImg{
     border-radius: 25px;
     width: 100%;
-    height: 415px;
+    height: 30rem;
     object-fit: cover;
 }
     
@@ -38,10 +38,82 @@
     font-weight: 500;
 }
 
-@media only screen and (max-width: 375px){
-    .carrousel{
-        margin-top: 94px;
+@media screen and (min-width : 993px) and (max-width: 1220px){
+    
+     
+    .arrowLeft{
+        position: absolute;
+        left: 6px;
+        width: 45px;
+        height: 90px;
+    } 
+    .arrowRight{
+        position: absolute;
+        right: 6px;
+        width: 45px;
+        height: 90px;
     }
+    .counter{
+        position: absolute;
+        bottom: 5%;
+        font-size: 12px;
+    }
+} 
+
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+        
+    .mainImg{
+        border-radius: 10px;
+    }
+     
+    .arrowLeft{
+        position: absolute;
+        left: 6px;
+        width: 45px;
+        height: 90px;
+    } 
+    .arrowRight{
+        position: absolute;
+        right: 6px;
+        width: 45px;
+        height: 90px;
+    }
+    .counter{
+        position: absolute;
+        bottom: 5%;
+        font-size: 12px;
+    }
+} 
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    
+    .mainImg{
+        border-radius: 10px;
+    }
+     
+    .arrowLeft{
+        position: absolute;
+        left: 6px;
+        width: 45px;
+        height: 90px;
+    } 
+    .arrowRight{
+        position: absolute;
+        right: 6px;
+        width: 45px;
+        height: 90px;
+    }
+    .counter{
+        position: absolute;
+        bottom: 5%;
+        font-size: 12px;
+    }
+} 
+
+
+
+@media only screen and (max-width: 375px){
     
     .mainImg{
         border-radius: 10px;

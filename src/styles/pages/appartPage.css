@@ -1,21 +1,26 @@
 .appartContainer{
-    margin-top: 40px;
-    margin-left: 100px;
-    width:1240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width:90vw;
 }
 
 .appartHeader{
-    margin-top: 30px;
-    height: auto;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
-    
+    align-items: flex-start; 
+    width: 100%;
 }
 
 .appartInfo{
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 .appartTitle {
     font-size: 36px;
@@ -28,18 +33,26 @@
     margin-bottom: 25px;
 }
 
-
+.hebergerInfo{
+    align-content: flex-end;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 .heberger{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: flex-end;
-    margin-bottom: 25px;
+    width: 100%;
 }
 .heberger span{
     font-size: 18px;
     font-weight: 500;
-    margin-right: 10px;
-    width: 100px;
+    /* width: 50%; */
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem
 }
 .heberger img{
     width: 64px;
@@ -50,17 +63,18 @@
 
 .stars{
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-flow: row nowrap;
+    font-size: 2.5rem;
+    margin-top: 1rem;
 }
 
 .descriptionSection {
-    display:flex;
-    flex-direction: row;
-    gap:76px;
-    border-radius: 10px;
-    width: 1240px;
-    margin-top: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .descriptionSection>.dropdown {
@@ -78,78 +92,57 @@
     width: 100%;
     font-size: 18px;
 }
-.descriptionSection>.dropdown>.dropdownText ul{
+
+.equipmentsList{
     font-size: 18px;
     line-height: 5px;
     display: list-item;
     list-style: none;
 }
 
-@media only screen and (max-width: 375px){
-    .appartContainer{
-        margin-top: 0px;
-        margin-left: 20px;
-        width:335px;
+
+
+@media screen and (min-width : 993px) and (max-width: 1220px){
+    .appartTitle {
+        font-size: 30px;
     }
     
+} 
+
+
+@media screen and (min-width: 769px) and (max-width: 992px){
     .appartHeader{
         margin-top: 15px;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start; 
-        
-    }
-    
-    .appartInfo{
-        flex-direction: column;
+        flex-flow: column nowrap;
     }
     .appartTitle {
         font-size: 18px;
-        font-weight: 500;
     }
     
     .location{
         font-size: 14px;
-        font-weight: 500;
-        margin: 10px 0;
     }
-    
     
     .hebergerInfo{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
+        flex-flow: row-reverse wrap;
         justify-content: space-between;
-        width: 335px;
-        margin-top: 20px;
+        width: 100%;
     }
     .heberger{
-        margin-bottom: 0;
+        width: 50%;
     }
     .heberger span{
-        font-size: 12px;
-        margin-right: 10px;
-        width: 100px;
-    }
-    .heberger img{
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        object-fit: cover;
+        font-size: 14px;
     }
     
     .stars{
-        justify-content: flex-start;
+        font-size: 1.6rem;
     }
     
     .descriptionSection {
-        flex-direction: column;
-        gap:20px;
-        border-radius: 5px;
-        width: 335px;
-        margin: 20px 0;
+        align-items: center;
+        flex-flow: column;
+        gap: 0;
     }
     
     .descriptionSection>.dropdown {
@@ -157,17 +150,127 @@
     }
     
     .descriptionSection>.dropdown>.dropdownHeader {
-        width: 100%;
         font-size: 12px;
     }
     .descriptionSection>.dropdown>.dropdownHeader>.dropdownTitle {
         font-size: 12px;
     }
     .descriptionSection>.dropdown>.dropdownText {
-        width: 100%;
         font-size: 12px;
     }
-    .descriptionSection>.dropdown>.dropdownText ul{
+    .equipmentsList{
+        font-size: 12px;
+        line-height: 0px;
+    }
+} 
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .appartHeader{
+        margin-top: 15px;
+        flex-flow: column nowrap;
+    }
+    .appartTitle {
+        font-size: 18px;
+    }
+    
+    .location{
+        font-size: 14px;
+    }
+    
+    .hebergerInfo{
+        flex-flow: row-reverse wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .heberger{
+        width: 50%;
+    }
+    .heberger span{
+        font-size: 14px;
+    }
+    
+    .stars{
+        font-size: 1.6rem;
+    }
+    
+    .descriptionSection {
+        align-items: center;
+        flex-flow: column;
+        gap: 0;
+    }
+    
+    .descriptionSection>.dropdown {
+        width: 100%;
+    }
+    
+    .descriptionSection>.dropdown>.dropdownHeader {
+        font-size: 12px;
+    }
+    .descriptionSection>.dropdown>.dropdownHeader>.dropdownTitle {
+        font-size: 12px;
+    }
+    .descriptionSection>.dropdown>.dropdownText {
+        font-size: 12px;
+    }
+    .equipmentsList{
+        font-size: 12px;
+        line-height: 0px;
+    }
+} 
+
+@media only screen and (max-width: 375px){
+        
+    .appartHeader{
+        margin-top: 15px;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+    
+    .appartTitle {
+        font-size: 18px;
+    }
+    
+    .location{
+        font-size: 14px;
+    }
+    
+    .hebergerInfo{
+        flex-flow: row-reverse wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .heberger{
+        width: 50%;
+    }
+    .heberger span{
+        font-size: 12px;
+    }
+    
+    .stars{
+        font-size: 1.6rem;
+    }
+        
+    .descriptionSection {
+        align-items: center;
+        flex-flow: column;
+        gap: 0;
+    }
+    
+    .descriptionSection>.dropdown {
+        width: 100%;
+    }
+    
+    .descriptionSection>.dropdown>.dropdownHeader {
+        font-size: 12px;
+    }
+    .descriptionSection>.dropdown>.dropdownHeader>.dropdownTitle {
+        font-size: 12px;
+    }
+    .descriptionSection>.dropdown>.dropdownText {
+        font-size: 12px;
+    }
+    .equipmentsList{
         font-size: 12px;
         line-height: 0px;
     }

@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 import img from "../assets/img/Vector.svg"
+import PropTypes from 'prop-types'
 
+
+
+/**
+ * Creation du composant Dropdown avec titre et texte et ouverture au click sur la flèche
+ * La flèche pivote à l'ouverture 
+ * @param {String} [Props.text=''] 
+ * @param {String|object} [Props.title='']
+ * @returns {JSX.Element} Composant Dropdown
+ */
 const Dropdown =({title, text}) => {
 
 const [isOpened,setIsOpened] = useState(false);
@@ -20,4 +30,8 @@ const [isOpened,setIsOpened] = useState(false);
     );
 };
 
+Dropdown.propTypes = {
+    title: PropTypes.string.isRequired,
+    text: PropTypes.any
+}
 export default Dropdown;

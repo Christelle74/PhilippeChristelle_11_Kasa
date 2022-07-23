@@ -1,9 +1,9 @@
 .card{
     position:relative;
-    width: 340px;
-    height:340px;
+    width: 21rem;
+    height:21rem;
     border-radius: 10px;
-    margin: 25px;
+    margin: 2rem;
     cursor: pointer;
 }
 
@@ -11,8 +11,6 @@
     cursor: pointer;
     box-shadow: 2px 2px 10px #ff6060;
     opacity : 0.5;
-    
-    
 }
 
 .card .shadow{
@@ -43,12 +41,19 @@
     font-weight: 500;
 }
 
+
+@media screen and (min-width : 993px) and (max-width: 1220px){
+    .card{
+        margin: 1rem;
+    }
+} 
+
+
+
 @media only screen and (max-width: 375px){
     .card{
-        position:relative;
-        width: 335px;
-        height:255px;
-        margin: 0px 20px 20px;
+        width: 20rem;
+        height:16rem;
     }
     
 }

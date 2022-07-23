@@ -1,12 +1,10 @@
 .header{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: absolute;
-    width: 1240px;
+    width: 90vw;
     height: 68px;
-    margin: 40px 100px;
+    margin: 4rem 0;
 }
 
 .logo{
@@ -14,13 +12,35 @@
 }
 
 
-
-
-@media only screen and (max-width: 375px){
+@media screen and (min-width : 993px) and (max-width: 1220px){
     .header{
-        width: 335px;
+        width: 90vw;
         height: 47px;
-        margin: 20px;
+    }
+    
+    .logo{
+        width: 50%;
+    }
+
+} 
+
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .header{
+        width: 90vw;
+        margin: 2rem 0;
+    }
+    
+    .logo{
+        width: 50%;
+    }
+
+} 
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .header{
+        width: 90vw;
+        margin: 2rem 0;
     }
     
     .logo{
@@ -31,3 +51,19 @@
         width: 145px;
     }
 } 
+
+@media screen and (max-width: 375px){
+    .header{
+        width: 90vw;
+        margin: 2rem 0;
+    }
+    
+    .logo{
+        width: 50%;
+    }
+
+    .logo img{
+        width: 145px;
+    }
+} 
+

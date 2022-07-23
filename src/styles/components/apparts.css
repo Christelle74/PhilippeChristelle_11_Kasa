@@ -5,15 +5,37 @@
     justify-content: center;
     border-radius: 25px;
     background: #F7F7F7;
-    margin: 50px 100px;
-    padding: 30px;
-    max-width:1240px;
+    margin: 5rem;
+    padding: 3rem 0;
+    width:90vw;
 }
 
+
+
+@media screen and (min-width : 993px) and (max-width: 1220px){
+    .appartGallery{
+        width: 90vw;
+    }
+} 
+
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .appartGallery{
+        width: 90vw;
+    }
+} 
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .appartGallery{
+        background: white;
+        width: 90vw;
+        padding:0;
+    }
+} 
 @media only screen and (max-width: 375px){
     .appartGallery{
         background: white;
-        margin: 22px 0 0 0;
+        width: 90vw;
         padding:0;
     }
     

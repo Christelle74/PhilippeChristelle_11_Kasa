@@ -1,6 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom' //différence entre navlink et link, avec navlink on peut mettre le style
 
+
+/**
+ * Creation du composant navigation avec liens vers pages d'accueil et A propos
+ *  
+ * @returns {JSX.Element} Composant NAvigation
+ */
 const Navigation = () => {
   return (
     <div className="navigation">

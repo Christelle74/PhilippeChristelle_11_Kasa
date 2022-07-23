@@ -4,7 +4,11 @@ import Footer from './Footer';
 import Header from './Header';
 
 
-
+/**
+ * Creation du composant SharedLayout 
+ * Partage du même contenu dans chaque page (Header et Footer)
+ * @returns {JSX.Element} Composant SharedLayout
+ */
 const SharedLayout = () => {
     return (
     <> {/* react-fragment*/}

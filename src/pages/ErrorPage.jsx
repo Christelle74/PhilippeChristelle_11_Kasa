@@ -1,6 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
+
+/**
+ * Creation de la page d'erreur 404
+ * avec lien de retour vers la page d'accueil 
+ *  
+ * @returns {JSX.Element} Composant ErrorPage
+ */
 const ErrorPage = () => {
   return (
     
