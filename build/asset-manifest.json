@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/PhilippeChristelle_11_Kasa/static/css/main.cbaf79d4.css",
+    "main.js": "/PhilippeChristelle_11_Kasa/static/js/main.4a7e8bc9.js",
+    "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png": "/PhilippeChristelle_11_Kasa/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.48994d589ab9a050990b.png",
+    "static/media/IMG.png": "/PhilippeChristelle_11_Kasa/static/media/IMG.09ec05dba6d06ca42f95.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/PhilippeChristelle_11_Kasa/static/media/Montserrat-VariableFont_wght.3068cdb43142f5625baf.ttf",
+    "static/media/greystar.png": "/PhilippeChristelle_11_Kasa/static/media/greystar.b5feec28fe4a95590965.png",
+    "static/media/activeStar.png": "/PhilippeChristelle_11_Kasa/static/media/activeStar.df0905171f4ebdb39508.png",
+    "index.html": "/PhilippeChristelle_11_Kasa/index.html",
+    "static/media/ArrowRight.svg": "/PhilippeChristelle_11_Kasa/static/media/ArrowRight.c62d65407bb4482d49cdb575e8599fb4.svg",
+    "static/media/ArrowLeft.svg": "/PhilippeChristelle_11_Kasa/static/media/ArrowLeft.c35dc1ddf7c0305bfd72d7667381bcf5.svg",
+    "static/media/Vector.svg": "/PhilippeChristelle_11_Kasa/static/media/Vector.c551ce8c537ce5cd2fa27082f961afd3.svg",
+    "main.cbaf79d4.css.map": "/PhilippeChristelle_11_Kasa/static/css/main.cbaf79d4.css.map",
+    "main.4a7e8bc9.js.map": "/PhilippeChristelle_11_Kasa/static/js/main.4a7e8bc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbaf79d4.css",
+    "static/js/main.4a7e8bc9.js"
+  ]
+}
