@@ -11,7 +11,7 @@ const Navigation = () => {
   return (
     <div className="navigation">
       <ul>
-        <NavLink to="/" className={(nav) => (nav.isActive ? 'nav-active' : '')}>
+        <NavLink to={process.env.PUBLIC_URL + '/'} className={(nav) => (nav.isActive ? 'nav-active' : '')}>
           <li>Accueil</li>
         </NavLink>
         <NavLink
