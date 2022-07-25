@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import {useNavigate, useParams } from 'react-router-dom';
 import Carrousel from '../components/Carrousel';
 import Dropdown from '../components/Dropdown';
 import Stars from '../components/Rating';
@@ -17,7 +17,7 @@ import appartInfo from '../service/appartService.js';
 const AppartPage = () => {
     const {id} = useParams();
     //console.log(id)
-    
+    const navigate = useNavigate()
     const [datas, setDatas] = useState({tags:[], equipments:[], pictures:[], rating:'', host : {"name":'', "picture":''} })
 
 
@@ -25,10 +25,13 @@ const AppartPage = () => {
         const allApparts = async()=> {
             const items =  await appartInfo();
              //console.log(items)
-             const item = items.find((appart) => appart.id === id)
-             //console.log(item)
-            
+            const item = items.find((appart) => appart.id === id)
+             //console.log(item) 
+             if (!item) {
+                navigate ("/ErrorPage");
+        }
             setDatas(item) 
+            
         }
         
         allApparts()
@@ -36,6 +39,7 @@ const AppartPage = () => {
 
 
     return (
+    
         <div className='appartContainer'>
             <div className="carrousel"> <Carrousel images={datas.pictures}/> </div>
             <div className='appartHeader'>
