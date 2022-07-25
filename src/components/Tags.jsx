@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 /**
  * Creation du composant Tags
- * @param {string} [Props.name='name of tag'] 
+ * @param {object} [Props.name='name of tag'] 
  * @returns {JSX.Element} Composant Tags
  */
 const Tags = ({name}) => {
@@ -16,7 +16,7 @@ const Tags = ({name}) => {
 };
 
 Tags.propTypes = {
-    name: PropTypes.array.isRequired,
+    name: PropTypes.object.isRequired,
 }
 
 export default Tags;
