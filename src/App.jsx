@@ -6,6 +6,11 @@ import ErrorPage from './pages/ErrorPage'
 import AppartPage from './pages/AppartPage'
 import SharedLayout from './components/SharedLayout'
 
+
+/**
+ * Fichier contenant le router du projet, création des chemins vers chaque pages
+ * @returns Composant App
+ */
 const App = () => {
   return (
     <BrowserRouter> {/*connexion au browser*/}
