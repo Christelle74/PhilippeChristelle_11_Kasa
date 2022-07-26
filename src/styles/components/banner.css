@@ -5,14 +5,18 @@
     align-items:center; 
     width: 90vw;  
     height: 14rem;
+    position:relative;
+    background: #000;
+    border-radius: 25px;
 }
 
 .bannerImg{
     object-fit: cover;
     border-radius: 25px;
-    position:relative;
+    opacity:.7;
     width: 100%;
     height: 100%;
+    
 }
 
 .banner p{
@@ -45,6 +49,7 @@
     .banner{
         width: 90vw;
         height: 7rem;
+        border-radius: 10px;
     }
     .bannerImg{
         border-radius: 10px;
@@ -58,6 +63,7 @@
     .banner{
         width: 90vw;
         height: 7rem;
+        border-radius: 10px;
     }
     .bannerImg{
         border-radius: 10px;
