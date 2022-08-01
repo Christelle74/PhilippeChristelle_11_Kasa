@@ -5,14 +5,16 @@
 
 export const getApparts = async () => {
   try {
-    const response = await fetch(
-      'https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json'
-    )
+    const response = await fetch('/apparts.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    })
     const datas = await response.json()
     //console.log(datas)
-    return datas
+    return datas.data
   } catch (error) {
     console.log(error)
   }
 }
-getApparts()

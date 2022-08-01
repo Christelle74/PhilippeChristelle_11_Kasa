@@ -26,7 +26,7 @@ export default function  AppartsGallery () {
 
   return (
     <div className="appartGallery">
-      {isloading ? "Loading..." : datas.map((data) => ( 
+      {isloading ? "Loading..." : datas?.map((data) => ( 
           <Card data={data} key={data.id}/> //composant enfant avec clé unique       
       ))}
     </div>
