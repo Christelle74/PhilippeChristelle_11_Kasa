@@ -1,9 +1,3 @@
-#POUR LANCER LE PROGRAMME EN LOCAL
-
-Cloner https://github.com/Christelle74/PhilippeChristelle_11_Kasa.git
-Faire dans le terminal : installation de fils
-Puis : début de fil
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
